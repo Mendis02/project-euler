@@ -2,12 +2,16 @@
 
 import sys
 
-
-t = int(input().strip())
-for a0 in range(t):
-    n = int(input().strip())
-    total = 0
+def total1():
+    total=0
     for i in range(n):
         if i%3 == 0 or i%5 == 0:
             total = total + i
     print(total)
+    return total
+
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+
+    fulltotal = total1()
